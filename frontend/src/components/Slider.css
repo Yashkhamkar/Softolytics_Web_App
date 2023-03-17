@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+  .hero-slider {
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .hero-slider {
+    height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .hero-slider {
+    height: 100vh;
+  }
+}
