@@ -1,8 +1,8 @@
-.container {
+/* .container {
   width: 100%;
   float: left;
   padding: 0 30px;
-}
+} */
 .small-header {
   display: block;
   background: #000;
@@ -142,6 +142,7 @@
 .service-data:hover .service-text p {
   color: #fff;
 }
+
 .service-text {
   width: 100%;
   float: left;
@@ -153,11 +154,10 @@
 .service-title {
   width: 100%;
   float: left;
+  text-align: center;
 }
 
 .service-title h3 {
-  text-align: center;
-  margin-top: 1rem;
   font-weight: 400;
   color: #15ada1;
   padding: 0 0;
@@ -193,7 +193,7 @@
 .service-btn {
   position: absolute;
   width: 25px;
-  height: 25px;
+  height: 45px;
   bottom: 0;
   right: 0;
   padding: 14px 25px;
@@ -281,8 +281,7 @@
 .service-data:hover .service-btn p {
   color: #fff;
   opacity: 1;
-}
-@media screen and (max-width: 768px) {
+}@media screen and (max-width: 900px) {
   .small-header {
     margin-left: 0;
   }

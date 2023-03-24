@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSlider, { Slide, MenuNav } from "hero-slider";
-import "./Slider.css"
+import Social from "./Social";
+// import "./Slider.css";
 const bogliasco = "https://i.imgur.com/Gu5Cznz.jpg";
 const countyClare = "https://i.imgur.com/idjXzVQ.jpg";
 const craterRock = "https://i.imgur.com/8DYumaY.jpg";
@@ -8,9 +9,11 @@ const giauPass = "https://i.imgur.com/8IuucQZ.jpg";
 
 const Slider = () => {
   return (
-    <>
+    <div id='main'>
+      {/* <Social /> */}
       <HeroSlider
         height={"100vh"}
+        width="100%"
         autoplay
         controller={{
           initialSlide: 1,
@@ -54,7 +57,7 @@ const Slider = () => {
 
         {/* <MenuNav /> */}
       </HeroSlider>
-    </>
+    </div>
   );
 };
 

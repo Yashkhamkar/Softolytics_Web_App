@@ -6,6 +6,7 @@ import service4 from "../assets/service-icons/service4.png";
 import service5 from "../assets/service-icons/service5.png";
 import service6 from "../assets/service-icons/service6.png";
 import "./Services.css";
+import ScrollDownButton from "./ScrollDownButton";
 const Services = () => {
   return (
     <>
@@ -13,8 +14,8 @@ const Services = () => {
         <div className="container">
           {/* <div className="small-header">What We Do</div> */}
           <div className="inner-container">
-            <div className="main-header" style={{ marginLeft: "5rem" }}>
-              <h2>Our Services</h2>
+            <div className="main-header">
+              <h2 style={{ marginLeft: "5rem" }}>Our Services</h2>
             </div>
             <div className="services-outer">
               <div className="services-inner">
@@ -161,6 +162,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      {/* <ScrollDownButton id="contact" /> */}
     </>
   );
 };
