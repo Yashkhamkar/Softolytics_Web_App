@@ -44,8 +44,8 @@ const defaultOptions3 = {
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [isEmailValid, setIsEmailValid] = useState(false);
-  const [isPhoneValid, setIsPhoneValid] = useState(false);
+  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isPhoneValid, setIsPhoneValid] = useState(true);
   const [message, setmessage] = useState("");
   const [name, setname] = useState("");
 
@@ -189,6 +189,25 @@ const Contact = () => {
                             for="message-319a"
                             className="u-label u-text-body-alt-color u-label-3"
                           >
+                            Full name
+                          </label>
+                          <input
+                            placeholder="Enter your Full name"
+                            rows="4"
+                            cols="50"
+                            id="message-319a"
+                            name="message"
+                            className="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle "
+                            required=""
+                            onChange={(e) => setname(e.target.value)}
+                            spellcheck="false"
+                          />
+                        </div>
+                        <div className="u-form-group u-form-message">
+                          <label
+                            for="message-319a"
+                            className="u-label u-text-body-alt-color u-label-3"
+                          >
                             *Email
                           </label>
                           <input
@@ -207,9 +226,7 @@ const Contact = () => {
                           />
                           <div className="message-container">
                             {isEmailValid ? (
-                              <span className="valid-message">
-                                Email is valid
-                              </span>
+                              <></>
                             ) : (
                               <span className="invalid-message">
                                 Email is invalid
@@ -240,32 +257,13 @@ const Contact = () => {
                           />
                           <div className="message-container">
                             {isPhoneValid ? (
-                              <span className="valid-message">Valid phone</span>
+                              <></>
                             ) : (
                               <span className="invalid-message">
                                 Invalid phone
                               </span>
                             )}
                           </div>
-                        </div>
-                        <div className="u-form-group u-form-message">
-                          <label
-                            for="message-319a"
-                            className="u-label u-text-body-alt-color u-label-3"
-                          >
-                            Full name
-                          </label>
-                          <input
-                            placeholder="Enter your Full name"
-                            rows="4"
-                            cols="50"
-                            id="message-319a"
-                            name="message"
-                            className="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle "
-                            required=""
-                            onChange={(e) => setname(e.target.value)}
-                            spellcheck="false"
-                          />
                         </div>
                         <div className="u-form-group u-form-message">
                           <label

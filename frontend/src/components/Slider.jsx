@@ -2,14 +2,15 @@ import React from "react";
 import HeroSlider, { Slide, MenuNav } from "hero-slider";
 import Social from "./Social";
 // import "./Slider.css";
-const bogliasco = "https://i.imgur.com/Gu5Cznz.jpg";
+import img1 from "../assets/home-slider/banner.jpg";
+import img2 from "../assets/home-slider/banner3.jpg";
 const countyClare = "https://i.imgur.com/idjXzVQ.jpg";
 const craterRock = "https://i.imgur.com/8DYumaY.jpg";
 const giauPass = "https://i.imgur.com/8IuucQZ.jpg";
 
 const Slider = () => {
   return (
-    <div id='main'>
+    <div id="main">
       {/* <Social /> */}
       <HeroSlider
         height={"100vh"}
@@ -33,28 +34,14 @@ const Slider = () => {
       >
         <Slide
           background={{
-            backgroundImageSrc: giauPass,
+            backgroundImageSrc: img1,
           }}
         />
-
         <Slide
           background={{
-            backgroundImageSrc: bogliasco,
+            backgroundImageSrc: img2,
           }}
-        />
-
-        <Slide
-          background={{
-            backgroundImageSrc: countyClare,
-          }}
-        />
-
-        <Slide
-          background={{
-            backgroundImageSrc: craterRock,
-          }}
-        />
-
+        />{" "}
         {/* <MenuNav /> */}
       </HeroSlider>
     </div>

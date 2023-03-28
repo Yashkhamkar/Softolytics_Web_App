@@ -1,0 +1,8 @@
+.data-main {
+  width: 100%;
+  float: left;
+}
+#small-banner {
+  background: #f4f4f4;
+  min-height: 500px;
+}

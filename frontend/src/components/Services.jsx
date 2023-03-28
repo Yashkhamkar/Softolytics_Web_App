@@ -15,7 +15,7 @@ const Services = () => {
           {/* <div className="small-header">What We Do</div> */}
           <div className="inner-container">
             <div className="main-header">
-              <h2 style={{ marginLeft: "5rem" }}>Our Services</h2>
+              <h1 style={{ marginLeft: "5rem" }}>Our Services</h1>
             </div>
             <div className="services-outer">
               <div className="services-inner">
