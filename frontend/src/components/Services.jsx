@@ -7,7 +7,18 @@ import service5 from "../assets/service-icons/service5.png";
 import service6 from "../assets/service-icons/service6.png";
 import "./Services.css";
 import ScrollDownButton from "./ScrollDownButton";
+import { Link } from "react-router-dom";
+import scroll from "../assets/scroll-down.png";
 const Services = () => {
+  const smoothScroll = (e, target) => {
+    e.preventDefault();
+    const element = document.querySelector(target);
+    const topOffset = element.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({
+      top: topOffset,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <div className="section services" id="ser">
@@ -21,7 +32,7 @@ const Services = () => {
               <div className="services-inner">
                 <div className="service-col">
                   <div className="service">
-                    <a href="websites.aspx" className="service-data">
+                    <Link to="websites.aspx" className="service-data">
                       <div className="service-img">
                         <img src={service1} alt="Websites" />
                       </div>
@@ -39,12 +50,12 @@ const Services = () => {
                           <span class="arrow"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="service-col">
                   <div className="service">
-                    <a href="graphic-design.aspx" className="service-data">
+                    <Link to="graphic-design.aspx" className="service-data">
                       <div className="service-img">
                         <img src={service2} alt="Graphic Design" />
                       </div>
@@ -62,12 +73,12 @@ const Services = () => {
                           <span class="arrow"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="service-col">
                   <div className="service">
-                    <a href="marketing.aspx" className="service-data">
+                    <Link to="marketing.aspx" className="service-data">
                       <div className="service-img">
                         <img src={service3} alt="Marketing" />
                       </div>
@@ -85,12 +96,12 @@ const Services = () => {
                           <span class="arrow"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="service-col">
                   <div className="service">
-                    <a href="mobile-apps.aspx" className="service-data">
+                    <Link to="mobile-apps.aspx" className="service-data">
                       <div className="service-img">
                         <img src={service4} alt="Mobile Apps" />
                       </div>
@@ -108,12 +119,12 @@ const Services = () => {
                           <span class="arrow"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="service-col">
                   <div className="service">
-                    <a href="social-media.aspx" className="service-data">
+                    <Link to="social-media.aspx" className="service-data">
                       <div className="service-img">
                         <img src={service5} alt="Social Media" />
                       </div>
@@ -131,12 +142,15 @@ const Services = () => {
                           <span class="arrow"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="service-col">
                   <div className="service">
-                    <a href="e-commerce-solution.aspx" className="service-data">
+                    <Link
+                      to="e-commerce-solution.aspx"
+                      className="service-data"
+                    >
                       <div className="service-img">
                         <img src={service6} alt="E-Commerce Solution" />
                       </div>
@@ -154,7 +168,7 @@ const Services = () => {
                           <span class="arrow"></span>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -162,7 +176,16 @@ const Services = () => {
           </div>
         </div>
       </div>
-      {/* <ScrollDownButton id="contact" /> */}
+      <div className="scroll-down">
+        <div className="scroll-down-arrow">
+          {/* <div className="scroll-down-text">Scroll Down</div> */}
+          <Link to="#about" onClick={(e) => smoothScroll(e, "#clients")}>
+            <div className="scroll-down-img-container">
+              <img className="scroll-down-img" src={scroll} alt="scroll down" />
+            </div>
+          </Link>
+        </div>
+      </div>
     </>
   );
 };

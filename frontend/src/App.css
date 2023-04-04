@@ -75,13 +75,13 @@
   overflow: hidden;
 }
 
-.scrolled .logo {
-  /* height: 40px; */
+/* .scrolled .logo {
+  height: 40px;
   transition: 1s;
   max-width: 140px;
   transform: rotate(-90deg);
   margin-left: -25px;
-}
+} */
 .Home {
   height: 100vh;
   width: 100vw;
@@ -98,8 +98,8 @@
   background-color: #f8f8f8;
 }
 .scroll-down {
-  position: fixed;
-  bottom: 20px;
+  position: absolute;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
@@ -118,7 +118,7 @@
   margin-bottom: 5px;
 }
 
-.scroll-down-arrow img {
+/* .scroll-down-arrow img {
   width: 30px;
   height: 30px;
   object-fit: contain;
@@ -128,8 +128,18 @@
   border-radius: 50%;
   padding: 8px;
   transition: all 0.2s ease-in-out;
+} */
+.scroll-down-arrow img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  padding: 5px;
+  border: 2px solid #958e8e;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
 }
 
 .scroll-down-arrow:hover img {
-  transform: scale(1.08);
+  transform: scale(1.2); /* increase image size on hover */
+  padding: 3px; /* increase padding on hover */
 }

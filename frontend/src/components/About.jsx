@@ -1,8 +1,19 @@
 import React from "react";
 import "./About.css";
 import google from "../assets/google-partners.png";
+import { Link } from "react-router-dom";
+import scroll from "../assets/scroll-down.png";
 
 const About = () => {
+  const smoothScroll = (e, target) => {
+    e.preventDefault();
+    const element = document.querySelector(target);
+    const topOffset = element.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({
+      top: topOffset,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <div className="section about" id="about">
@@ -41,6 +52,20 @@ const About = () => {
           </div>
         </div>
         <div className="section-line"></div>
+        <div className="scroll-down">
+          <div className="scroll-down-arrow">
+            {/* <div className="scroll-down-text">Scroll Down</div> */}
+            <Link to="#about" onClick={(e) => smoothScroll(e, "#ser")}>
+              <div className="scroll-down-img-container">
+                <img
+                  className="scroll-down-img"
+                  src={scroll}
+                  alt="scroll down"
+                />
+              </div>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );

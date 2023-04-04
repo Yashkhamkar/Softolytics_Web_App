@@ -38,8 +38,10 @@ function App() {
             </div>
           }
         />
+        <Route path="/web" element={<OneService />} />
       </Routes>
       <Social />
+      {/* <ScrollDownButton /> */}
       <Footer />
     </div>
   );

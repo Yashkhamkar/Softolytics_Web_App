@@ -1,34 +1,31 @@
 import React from "react";
+import "./OneService.css";
+import img1 from "../assets/web-design-page/1.png";
+import img2 from "../assets/web-design-page/2.png";
+import img3 from "../assets/web-design-page/3.png";
+import img4 from "../assets/web-design-page/4.png";
 
 const OneService = () => {
   return (
     <div>
-      {" "}
-      <div class="data-main">
-        <div class="section small-banner" id="small-banner">
-          <h1 class="page-title">WEBSITES</h1>
-          <h2 class="page-content-title">
-            <span>Responsive&nbsp;Websites</span> <span class="slash">|</span>
-            <span>Corporate&nbsp;Websites</span> <span class="slash">|</span>
+      <div className="data-main">
+        <div className="section small-banner" id="small-banner">
+          <h1 className="page-title">WEBSITES</h1>
+          <h2 className="page-content-title">
+            <span>Responsive&nbsp;Websites</span>{" "}
+            <span className="slash">|</span>
+            <span>Corporate&nbsp;Websites</span>{" "}
+            <span className="slash">|</span>
             <span>E&nbsp;-&nbsp;Commerce&nbsp;Websites</span>
           </h2>
-          <div class="scroll-down">
-            <div class="scroll-down-arrow">
-              <div class="scroll-down-text">Scroll Down</div>
-              <a class="scroll-to-id" href="#web-design">
-                <img src="assets/icons/scroll-down.png" alt="Scroll Down" />
-              </a>
-            </div>
-          </div>
-          <div class="section-line"></div>
         </div>
-        <div class="section inner-service" id="web-design">
-          <div class="container">
-            <div class="small-header">STUNNING WEBSITE DESIGN</div>
-            <div class="inner-container">
-              <div class="half">
-                <div class="main-header">
-                  <h2>Website Design</h2>
+        <div className="section inner-service" id="web-design">
+          <div className="container">
+            <div className="small-header">STUNNING WEBSITE DESIGN</div>
+            <div className="inner-container">
+              <div className="half">
+                <div className="main-header">
+                  <h1>Website Design</h1>
                 </div>
                 <p>
                   Because looks matter and standing out from the crowd is the
@@ -49,8 +46,8 @@ const OneService = () => {
                   </li>
                   <li>Will it convert visitors into customers ?</li>
                 </ul>
-                <div class="test-btn">
-                  <a href="website-design.aspx" class="btn btn-1">
+                <div className="test-btn">
+                  <a href="website-design.aspx" className="btn btn-1">
                     <svg>
                       <rect
                         x="0"
@@ -64,30 +61,21 @@ const OneService = () => {
                   </a>
                 </div>
               </div>
-              <div class="half">
-                <div class="inner-service-img">
-                  <img src="assets/web-design-page/4.png" alt="Web Design" />
+              <div className="half">
+                <div className="inner-service-img">
+                  <img src={img4} alt="Web Design" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="scroll-down">
-            <div class="scroll-down-arrow">
-              <div class="scroll-down-text">Web Development</div>
-              <a class="scroll-to-id" href="#web-development">
-                <img src="assets/icons/scroll-down.png" alt="Scroll Down" />
-              </a>
-            </div>
-          </div>
-          <div class="section-line"></div>
         </div>
-        <div class="section inner-service" id="web-development">
-          <div class="container">
-            <div class="small-header">Crafting Customised Applications</div>
-            <div class="inner-container">
-              <div class="half">
-                <div class="main-header">
-                  <h2>Web Development</h2>
+        <div className="section inner-service" id="web-development">
+          <div className="container">
+            <div className="small-header">Crafting Customised Applications</div>
+            <div className="inner-container">
+              <div className="half">
+                <div className="main-header">
+                  <h1>Web Development</h1>
                 </div>
                 <h3>Expertise & Experience</h3>
                 <p>
@@ -104,8 +92,8 @@ const OneService = () => {
                   every future eventuality be it visual design, platforms
                   security and it’s future functionality.
                 </p>
-                <div class="test-btn">
-                  <a href="web-development.aspx" class="btn btn-1">
+                <div className="test-btn">
+                  <a href="web-development.aspx" className="btn btn-1">
                     <svg>
                       <rect
                         x="0"
@@ -119,33 +107,21 @@ const OneService = () => {
                   </a>
                 </div>
               </div>
-              <div class="half">
-                <div class="inner-service-img">
-                  <img
-                    src="assets/web-design-page/3.png"
-                    alt="Web Development"
-                  />
+              <div className="half">
+                <div className="inner-service-img">
+                  <img src={img3} alt="Web Development" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="scroll-down">
-            <div class="scroll-down-arrow">
-              <div class="scroll-down-text">e-Commerce</div>
-              <a class="scroll-to-id" href="#e-commerce">
-                <img src="assets/icons/scroll-down.png" alt="Scroll Down" />
-              </a>
-            </div>
-          </div>
-          <div class="section-line"></div>
         </div>
-        <div class="section inner-service" id="e-commerce">
-          <div class="container">
-            <div class="small-header">e-Commerce Solutions</div>
-            <div class="inner-container">
-              <div class="half">
-                <div class="main-header">
-                  <h2>e-Commerce Websites</h2>
+        <div className="section inner-service" id="e-commerce">
+          <div className="container">
+            <div className="small-header">e-Commerce Solutions</div>
+            <div className="inner-container">
+              <div className="half">
+                <div className="main-header">
+                  <h1>e-Commerce Websites</h1>
                 </div>
                 <p>
                   We have been designing E-commerce web design solutions for
@@ -164,8 +140,8 @@ const OneService = () => {
                   their best light , helping you gain and retain more customers
                   and increase your profits.
                 </p>
-                <div class="test-btn">
-                  <a href="e-commerce-solution.aspx" class="btn btn-1">
+                <div className="test-btn">
+                  <a href="e-commerce-solution.aspx" className="btn btn-1">
                     <svg>
                       <rect
                         x="0"
@@ -179,29 +155,20 @@ const OneService = () => {
                   </a>
                 </div>
               </div>
-              <div class="half">
-                <div class="inner-service-img">
-                  <img src="assets/web-design-page/2.png" alt="E Commerce" />
+              <div className="half">
+                <div className="inner-service-img">
+                  <img src={img2} alt="E Commerce" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="scroll-down">
-            <div class="scroll-down-arrow">
-              <div class="scroll-down-text">Web Development</div>
-              <a class="scroll-to-id" href="#web-maintenance">
-                <img src="assets/icons/scroll-down.png" alt="Scroll Down" />
-              </a>
-            </div>
-          </div>
-          <div class="section-line"></div>
         </div>
-        <div class="section inner-service" id="web-maintenance">
-          <div class="container">
-            <div class="small-header">Maintenance And Support</div>
-            <div class="inner-container">
-              <div class="half">
-                <div class="main-header">
+        <div className="section inner-service" id="web-maintenance">
+          <div className="container">
+            <div className="small-header">Maintenance And Support</div>
+            <div className="inner-container">
+              <div className="half">
+                <div className="main-header">
                   <h1>Web Maintenance</h1>
                 </div>
                 <p>
@@ -215,8 +182,8 @@ const OneService = () => {
                   Using our maintenance and support is like having your own
                   in-house team to fine tune your website.
                 </p>
-                <div class="test-btn">
-                  <a href="website-maintanance.aspx" class="btn btn-1">
+                <div className="test-btn">
+                  <a href="website-maintanance.aspx" className="btn btn-1">
                     <svg>
                       <rect
                         x="0"
@@ -230,12 +197,9 @@ const OneService = () => {
                   </a>
                 </div>
               </div>
-              <div class="half">
-                <div class="inner-service-img">
-                  <img
-                    src="assets/web-design-page/1.png"
-                    alt="Web Maintenance"
-                  />
+              <div className="half">
+                <div className="inner-service-img">
+                  <img src={img1} alt="Web Maintenance" />
                 </div>
               </div>
             </div>
